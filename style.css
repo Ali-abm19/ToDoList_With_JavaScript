@@ -1,3 +1,72 @@
 i:hover {
     cursor: pointer;
 }
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #BDC2BF;
+}
+
+body div {
+
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 6px;
+}
+
+#newItem {
+    margin-left: 15%;
+}
+
+#newItem input {
+    margin-top: 10px;
+}
+
+button {
+
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+
+p {
+    text-align: center;
+}
+
+section div {
+    margin-top: 12px;
+}
+
+#footer {
+    border-radius: 6px;
+}
+
+
+
+/* coloring */
+body {
+    color: #345995;
+}
+
+body div {
+    background-color: #E2DBBE;
+}
+#footer {
+    background-color: #E2DBBE;
+    border: solid 2px #8C6057;
+}

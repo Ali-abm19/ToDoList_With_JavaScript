@@ -14,18 +14,18 @@ btn.addEventListener("click", () => {
     <input class="box" type="checkbox">
     <i class="material-icons deleteIcon">delete</i>
     <i class="material-icons editIcon">edit</i>`;
-    itemWrapper.innerHTML = toDo;
-    itemsList.appendChild(itemWrapper);
-    counterAll.innerHTML++;
-    item.value = "";
-
+    if (item.value != "") {
+        itemWrapper.innerHTML = toDo;
+        itemsList.appendChild(itemWrapper);
+        counterAll.innerHTML++;
+        item.value = "";
+    }
 
     const checkbox = itemWrapper.querySelector(".box");
     const textToStrike = itemWrapper.querySelector(".textItem");
     checkbox.addEventListener("change", () => {
         if (checkbox.checked == true) {
             counterComplete.innerHTML++;
-            console.log(counterComplete);
             textToStrike.style.textDecoration = "line-through";
         }
         else {

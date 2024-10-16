@@ -7,24 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
   <title>To Do app</title>
 </head>
 
 <body>
-  <section id="newItem">
-    <label>Item:</label>
-    <input id="itemToAdd" value="">
-    <button id="btn">Add</button>
-  </section>
 
-  <section id="currentItems">
-    <!-- items -->
-  </section>
+  <div>
+    <section id="newItem">
+      <label>Title:</label>
+      <input id="itemToAdd" value="">
+      <button id="btn">Add</button>
+    </section>
 
-  <section>
-    <p>Completed Items: <span id="completed">0</span> </p>
-    <p>Items: <span id="AllItems">0</span></p>
-  </section>
+    <section id="currentItems">
+      <!-- items -->
+    </section>
+
+    <section id="footer">
+      <p>Completed Items: <span id="completed">0</span> </p>
+      <p>Added Items: <span id="AllItems">0</span></p>
+    </section>
+  </div>
+
   <script src="script.js"></script>
 </body>
 
