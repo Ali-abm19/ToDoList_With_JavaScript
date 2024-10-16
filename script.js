@@ -2,7 +2,6 @@
 const btn = document.getElementById("btn");
 const itemsList = document.getElementById("currentItems");
 
-
 // btn.onclick(() => {
 //     let item = document.getElementById("itemToAdd");
 //     let itemWrapper = document.createElement("div");
@@ -17,18 +16,23 @@ btn.addEventListener("click", () => {
     const item = document.getElementById("itemToAdd");
     const itemWrapper = document.createElement("div");
     const toDo = `
-    <span>${item.value}</span> <input id="${item.value + "box"}" type="checkbox"> <i class="material-icons">delete</i>`;
+    <span class="textItem">${item.value}</span> <input class="box" type="checkbox"> <i class="material-icons">delete</i>`;
     itemWrapper.innerHTML = toDo;
     itemsList.appendChild(itemWrapper);
+    item.value = "";
+
+
+    const checkbox = itemWrapper.querySelector(".box");
+    const textToStrike = itemWrapper.querySelector(".textItem");
+    checkbox.addEventListener("change", () => {
+        if (checkbox.checked == true)
+            textToStrike.style.textDecoration = "line-through";
+        else
+            textToStrike.style.textDecoration = "none";
+    });
+
+    const icon = itemWrapper.querySelector(".material-icons");
+    icon.addEventListener("click", ()=>{
+        itemWrapper.innerHTML = null;
+    });
 });
-
-const checkbox = itemsList.querySelector(".cBox");
-
-//  checkbox.addEventListener(change, ()=>{
-
-//  });
-
-// function addItem(){
-//     let item = document.getElementById("itemToAdd").Value;
-//     return item
-// }
