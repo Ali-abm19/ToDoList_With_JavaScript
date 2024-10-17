@@ -7,17 +7,18 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #BDC2BF;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 body div {
-
-    margin-left: 30%;
-    margin-right: 30%;
+    text-align: center;
     border-radius: 6px;
-}
-
-#newItem {
-    margin-left: 15%;
 }
 
 #newItem input {
@@ -25,8 +26,6 @@ body div {
 }
 
 button {
-
-
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
@@ -48,9 +47,9 @@ p {
     text-align: center;
 }
 
-section div {
+/* section div {
     margin-top: 12px;
-}
+} */
 
 #footer {
     border-radius: 6px;
