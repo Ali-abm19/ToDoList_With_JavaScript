@@ -36,7 +36,7 @@ retrieved_LocalStorage_list.map(toDoItemFromLS => {
         const deleteIcon = itemWrapper.querySelector(".deleteIcon");
         deleteIcon.addEventListener("click", () => {
             itemWrapper.innerHTML = null;
-            localStorage_list.splice([localStorage_list.findIndex(x => x == textToStrike.innerHTML.toString())],1);
+            localStorage_list.splice([localStorage_list.findIndex(x => x == textToStrike.innerHTML.toString())], 1);
             localStorage.setItem("list", JSON.stringify(localStorage_list));
             counterAll.innerHTML--;
             if (checkbox.checked == true) {
@@ -46,7 +46,7 @@ retrieved_LocalStorage_list.map(toDoItemFromLS => {
 
         const edit = itemWrapper.querySelector(".editIcon");
         edit.addEventListener("click", () => {
-            let newText = prompt("provide the new name: ");
+            let newText = prompt("provide the new title: ");
             if (newText != null && newText.length > 0) {
                 localStorage_list[localStorage_list.findIndex(x => x == textToStrike.innerHTML.toString())] = newText;
                 textToStrike.innerHTML = newText;
@@ -97,7 +97,7 @@ btn.addEventListener("click", () => {
 
         const edit = itemWrapper.querySelector(".editIcon");
         edit.addEventListener("click", () => {
-            let newText = prompt("provide the new name: ");
+            let newText = prompt("provide the new title: ");
             if (newText.length > 0)
                 textToStrike.innerHTML = newText;
         });
