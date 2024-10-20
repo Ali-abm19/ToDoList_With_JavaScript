@@ -5,7 +5,8 @@ const counterComplete = document.getElementById("completed");
 const counterAll = document.getElementById("AllItems");
 
 let localStorage_list = [];
-let retrieved_LocalStorage_list = JSON.parse(localStorage.getItem("list"));
+
+let retrieved_LocalStorage_list = JSON.parse(localStorage.getItem("list")) || [];
 
 retrieved_LocalStorage_list.map(toDoItemFromLS => {
     const itemWrapper = document.createElement("div");
