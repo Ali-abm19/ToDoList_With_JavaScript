@@ -2,7 +2,7 @@
 
 This project aims to build a to-do list application by applying HTML, CSS, and Javascript. The application allows users to manage their tasks effectively.
 
-## features:
+## Features:
 
 1. Adding a Todo:
    - Write the task in the input field to make a new to-do item.
